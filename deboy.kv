@@ -1,0 +1,59 @@
+<Layoutt>:
+
+    BoxLayout:
+        orientation:"vertical"
+
+        BoxLayout:
+            orientation: "horizontal"
+            #kathe kouti 
+            Button:
+                background_normal: "minus.png"
+                size_hint: 0.04 , 0.2
+                pos_hint: {"x": 0.5}
+                pos_hint: {"y":0.5}
+                on_press : root.minus()
+            Label:
+                size_hint: 0.2 , 0.2
+                pos_hint: {"x": 0.5}
+                pos_hint: {"y":0.5}
+                id: mainlabel
+                text : "DeBoy"
+                font_size: 100
+            Label:
+                id: seclabel
+                text :"€€€"
+                size_hint: 0.1 , 0.1
+                font_size: 44
+                pos_hint: {"x":0}
+                pos_hint: {"y":0.5}
+
+            Button:
+                background_normal: "plus.png"
+                size_hint: 0.04 , 0.2
+                pos_hint: {"x": 0.5}
+                pos_hint: {"y":0.5}
+                on_press : root.plus()
+
+        GridLayout: 
+        #kathe mode 2X2
+            cols:2
+            
+            Button:
+                id: tips
+                background_normal: "tips.png"
+                on_press : root.onTips()
+
+            Button:
+                id: gas
+                background_normal: "gas.png"
+                on_press : root.onGas()
+
+            Button:
+                id: bank
+                background_normal: "bank.png"
+                on_press : root.onBank()
+
+            Button:
+                id: supra
+                background_normal: "supra.png"
+                on_press : root.onSupra()
